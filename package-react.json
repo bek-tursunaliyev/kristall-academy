@@ -1,0 +1,20 @@
+{
+  "name": "kristall-academy-react",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Kristall Academy - Pure React & CSS Version",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.454.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
