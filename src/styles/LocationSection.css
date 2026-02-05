@@ -1,0 +1,47 @@
+.location-section {
+  padding: 5rem 1rem;
+  background-color: var(--background);
+}
+
+.location-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.map-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.map-iframe {
+  border-radius: 1rem;
+  border: none;
+}
+
+.map-link {
+  text-align: center;
+}
+
+.maps-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+}
+
+.maps-button:hover {
+  color: var(--primary-dark);
+  background-color: rgba(45, 138, 125, 0.05);
+}
+
+.maps-button .icon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,217 @@
+.admissions-section {
+  padding: 5rem 1rem;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.admissions-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admissions-header h2 {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.admissions-header p {
+  color: var(--muted-foreground);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+}
+
+.step-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.step-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(45, 138, 125, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.step-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+.step-card h3 {
+  font-size: 1.125rem;
+  color: var(--foreground);
+  margin: 0 0 0.5rem 0;
+}
+
+.step-description {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  margin: 0 0 1rem 0;
+}
+
+.step-timeline {
+  display: inline-block;
+  background-color: rgba(45, 138, 125, 0.1);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+}
+
+.info-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.info-card h3 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.requirements-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.requirements-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+}
+
+.requirements-list .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.dates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.date-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.date-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.date-badge.primary {
+  background-color: rgba(45, 138, 125, 0.15);
+  color: var(--primary);
+}
+
+.date-badge.outline {
+  background-color: var(--muted);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+}
+
+.admissions-footer {
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.admissions-footer p {
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.admissions-footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admissions-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

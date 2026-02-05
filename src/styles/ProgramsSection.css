@@ -1,0 +1,114 @@
+.programs-section {
+  padding: 5rem 1rem;
+}
+
+.programs-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programs-header h2 {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+
+.programs-header p {
+  color: var(--muted-foreground);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.program-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+
+.program-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: rgba(45, 138, 125, 0.2);
+}
+
+.program-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(45, 138, 125, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.program-card:hover .program-icon {
+  background-color: rgba(45, 138, 125, 0.15);
+}
+
+.program-icon .icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+.program-card h3 {
+  font-size: 1.25rem;
+  color: var(--foreground);
+  margin: 0 0 1rem 0;
+}
+
+.program-description {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.program-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.program-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.program-features .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+}
+
+@media (min-width: 768px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
